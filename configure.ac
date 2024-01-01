@@ -7,7 +7,7 @@ AC_CONFIG_SRCDIR(src/main.cpp)
 AM_INIT_AUTOMAKE
 
 AC_ARG_WITH(setgid,
-[  --with-setgid=NAME      install hengband as group NAME],
+[  --with-setgid=NAME      install Tangband as group NAME],
 [case "${withval}" in
   no) GAMEGROUP="";;
   yes) AC_MSG_ERROR(missing argument for --with-setgid);;
@@ -26,19 +26,19 @@ fi
 
 dnl overwrite the path with an user-specified value
 AC_ARG_WITH(libpath,
-[  --with-libpath=path     specify the path to the Hengband lib folder],
+[  --with-libpath=path     specify the path to the Tangband lib folder],
 [game_libpath="$withval"])
 
 AC_ARG_WITH(varpath,
-[  --with-varpath=path     specify the path to the Hengband var folder],
+[  --with-varpath=path     specify the path to the Tangband var folder],
 [game_varpath="$withval"],
 [game_varpath="$game_libpath"])
 
-AC_DEFINE_UNQUOTED(DEFAULT_LIB_PATH, "$game_libpath", [Path to the Hengband lib folder])
+AC_DEFINE_UNQUOTED(DEFAULT_LIB_PATH, "$game_libpath", [Path to the Tangband lib folder])
 DEFAULT_LIB_PATH="$game_libpath"
 AC_SUBST(DEFAULT_LIB_PATH)
 
-AC_DEFINE_UNQUOTED(DEFAULT_VAR_PATH, "$game_varpath", [Path to the Hengband var folder])
+AC_DEFINE_UNQUOTED(DEFAULT_VAR_PATH, "$game_varpath", [Path to the Tangband var folder])
 DEFAULT_VAR_PATH="$game_varpath"
 AC_SUBST(DEFAULT_VAR_PATH)
 
