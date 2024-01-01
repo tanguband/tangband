@@ -23,7 +23,7 @@ std::string get_version()
     }
 
     if (VERSION_STATUS != VersionStatusType::RELEASE) {
-        return format(_("短愚蛮怒 %d.%d.%d%s%d", "Tangband %d.%d.%d%s%d"), H_VER_MAJOR, H_VER_MINOR, H_VER_PATCH, expr.data(), H_VER_EXTRA);
+        return format(_("短愚蛮怒 %d.%d.%d", "Tangband %d.%d.%d%"), H_VER_MAJOR, H_VER_MINOR, H_VER_PATCH);
     } else {
         concptr mode = IS_STABLE_VERSION ? _("安定版", "Stable") : _("開発版", "Developing");
         return format(_("短愚蛮怒 %d.%d.%d.%d(%s)", "Tangband %d.%d.%d.%d(%s)"), H_VER_MAJOR, H_VER_MINOR, H_VER_PATCH, H_VER_EXTRA, mode);
