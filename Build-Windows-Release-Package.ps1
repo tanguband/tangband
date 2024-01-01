@@ -11,7 +11,7 @@ $Env:Path = $msbuild_path + ";" + $Env:Path
 
 function BuildPackage ($package_name, $package_unique_files, $build_conf) {
     # バイナリをリビルド
-    MSBuild.exe .\tangband\tangband.sln /t:Rebuild /p:Configuration=$build_conf
+    MSBuild.exe .\Tangband\Tangband.sln /t:Rebuild /p:Configuration=$build_conf
 
     if ($LASTEXITCODE -ne 0) {
         # ビルド失敗ならスクリプトを中断する
@@ -25,7 +25,7 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
     New-Item $tangbandDir -ItemType Directory
 
     # 必要なファイルをコピーして、その中で不要になりえるものを削除
-    Copy-Item -Verbose -Path .\tangband.exe, .\readme_angband, .\THIRD-PARTY-NOTICES.txt -Destination $tangbandDir
+    Copy-Item -Verbose -Path .\Tangband.exe, .\readme_angband, .\THIRD-PARTY-NOTICES.txt -Destination $tangbandDir
     Copy-Item -Verbose -Path $package_unique_files -Destination $tangbandDir
     Copy-Item -Verbose -Recurse -Path .\lib -Destination $tangbandDir -Exclude Makefile.am, *.raw, .gitattributes
     Copy-Item -Verbose -Path .\lib\apex\h_scores.raw -Destination $tangbandDir\lib\apex
@@ -41,6 +41,6 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
 }
 
 # 日本語版
-BuildPackage -package_name tangband-$Version-jp -package_unique_files .\readme.md, .\autopick.txt -build_conf Release
+BuildPackage -package_name Tangband-$Version-jp -package_unique_files .\readme.md, .\autopick.txt -build_conf Release
 # 英語版
-BuildPackage -package_name tangband-$Version-en -package_unique_files .\readme-eng.md, .\autopick_eng.txt -build_conf English-Release
+BuildPackage -package_name Tangband-$Version-en -package_unique_files .\readme-eng.md, .\autopick_eng.txt -build_conf English-Release

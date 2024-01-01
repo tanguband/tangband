@@ -335,7 +335,7 @@ static void on_defeat_last_boss(PlayerType *player_ptr)
     w_ptr->add_winner_class(player_ptr->pclass);
     RedrawingFlagsUpdater::get_instance().set_flag(MainWindowRedrawingFlag::TITLE);
     play_music(TERM_XTRA_MUSIC_BASIC, MUSIC_BASIC_FINAL_QUEST_CLEAR);
-    exe_write_diary(player_ptr, DiaryKind::DESCRIPTION, 0, _("見事に短愚蛮怒の勝利者となった！", "finally became *WINNER* of tangband!"));
+    exe_write_diary(player_ptr, DiaryKind::DESCRIPTION, 0, _("見事に短愚蛮怒の勝利者となった！", "finally became *WINNER* of Tangband!"));
     patron_list[player_ptr->chaos_patron].admire(player_ptr);
     msg_print(_("*** おめでとう ***", "*** CONGRATULATIONS ***"));
     msg_print(_("あなたはゲームをコンプリートしました。", "You have won the game!"));

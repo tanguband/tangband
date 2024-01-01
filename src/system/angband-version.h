@@ -6,7 +6,7 @@
 /*!
  * @brief 現在のバリアント名
  */
-constexpr std::string_view VARIANT_NAME("tangband");
+constexpr std::string_view VARIANT_NAME("Tangband");
 
 /*!
  * @brief 基底バリアント名

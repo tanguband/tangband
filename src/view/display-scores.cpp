@@ -71,7 +71,7 @@ void display_scores(int from, int to, int note, high_score *score)
         TermCenteredOffsetSetter tcos(MAIN_TERM_MIN_COLS, MAIN_TERM_MIN_ROWS);
 
         term_clear();
-        put_str(_("                短愚蛮怒: 勇者の殿堂", "                tangband Hall of Fame"), 0, 0);
+        put_str(_("                短愚蛮怒: 勇者の殿堂", "                Tangband Hall of Fame"), 0, 0);
         if (k > 0) {
             put_str(format(_("( %d 位以下 )", "(from position %d)"), k + 1), 0, 40);
         }
