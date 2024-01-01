@@ -43,17 +43,32 @@ F:a:FLOOR:8:44
 # Floor with Bandit
 F:b:FLOOR:8:150
 
+# Gold
+F:$:FLOOR:8:0:490
+
+# Perception
+F:_:FLOOR:8:0:326
+
+# Trap Location
+F:-:FLOOR:8:0:352
+
+# Enlightenment
+F:+:FLOOR:8:0:328
+
+# Illumination
+F:~:FLOOR:8:0:355
+
 # Dungeon layout
-D:XXXXXXXXXXXXXXX
-D:X....a....X..TX
-D:X.........D...X
-D:X.........Xb..X
-D:XXXXX.....XXXXX
-D:XT..D........aX
-D:X.b.X.........X
-D:XXXXX.........X
-D:X<..D.........X
-D:XXXXXXXXXXXXXXX
+D:XXXXXXXXXXXXXXXXX
+D:X....a....X..TX$X
+D:X.........D...X$X
+D:X.........Xb..X$X
+D:XXXXX.....XXXXX$X
+D:XT..D........aD+X
+D:X.b.X.........X_X
+D:XXXXX.........X-X
+D:X<..D.........X~X
+D:XXXXXXXXXXXXXXXXX
 
 # Starting position
 P:8:1
