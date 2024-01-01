@@ -6,7 +6,7 @@
 /*!
  * @brief 現在のバリアント名
  */
-constexpr std::string_view VARIANT_NAME("Hengband");
+constexpr std::string_view VARIANT_NAME("Tangband");
 
 /*!
  * @brief 基底バリアント名
@@ -20,15 +20,15 @@ constexpr std::string_view ROOT_VARIANT_NAME("Hengband");
  * @brief セーブファイル上のバージョン定義 / "Savefile Version Number" for Hengband
  * @details v1.1.1以上にのみ適用
  */
-#define H_VER_MAJOR 3 //!< ゲームのバージョン定義(メジャー番号)
+#define H_VER_MAJOR 24 //!< ゲームのバージョン定義(メジャー番号)
 #define H_VER_MINOR 0 //!< ゲームのバージョン定義(マイナー番号)
-#define H_VER_PATCH 1 //!< ゲームのバージョン定義(パッチ番号)
-#define H_VER_EXTRA 5 //!< ゲームのバージョン定義(エクストラ番号)
+#define H_VER_PATCH 0 //!< ゲームのバージョン定義(パッチ番号)
+#define H_VER_EXTRA 0 //!< ゲームのバージョン定義(エクストラ番号)
 
 /*!
  * @brief セーブファイルのバージョン(3.0.0から導入)
  */
-constexpr uint32_t SAVEFILE_VERSION = 19;
+constexpr uint32_t SAVEFILE_VERSION = 24;
 
 /*!
  * @brief バージョンが開発版が安定版かを返す(廃止予定)
@@ -45,6 +45,6 @@ enum class VersionStatusType {
 /*!
  * @brief バージョンの立ち位置
  */
-constexpr VersionStatusType VERSION_STATUS = VersionStatusType::BETA;
+constexpr VersionStatusType VERSION_STATUS = VersionStatusType::RELEASE;
 
 std::string get_version();
