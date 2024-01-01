@@ -45,6 +45,6 @@ enum class VersionStatusType {
 /*!
  * @brief バージョンの立ち位置
  */
-constexpr VersionStatusType VERSION_STATUS = VersionStatusType::RELEASE;
+constexpr VersionStatusType VERSION_STATUS = VersionStatusType::BETA;
 
 std::string get_version();
