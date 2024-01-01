@@ -1078,7 +1078,7 @@ stdafx.h.gch: stdafx.h stdafx.cpp Makefile
 		$(PCH_CHECKSUMMER) $@ > "$@".sum ; \
 	fi
 
-$(Tangband_SOURCES:.cpp=.$(OBJEXT)): stdafx.h.gch
+$(tangband_SOURCES:.cpp=.$(OBJEXT)): stdafx.h.gch
 endif
 
 install-exec-hook:
