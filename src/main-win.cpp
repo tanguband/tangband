@@ -143,7 +143,7 @@
 /*
  * Window names
  */
-LPCWSTR win_term_name[] = { L"Hengband", L"Term-1", L"Term-2", L"Term-3", L"Term-4", L"Term-5", L"Term-6", L"Term-7" };
+LPCWSTR win_term_name[] = { L"Tangband", L"Term-1", L"Term-2", L"Term-3", L"Term-4", L"Term-5", L"Term-6", L"Term-7" };
 
 #define MAX_TERM_DATA 8 //!< Maximum number of windows
 
@@ -2764,7 +2764,7 @@ int WINAPI game_main(_In_ HINSTANCE hInst)
     setlocale(LC_ALL, "ja_JP");
     hInstance = hInst;
     if (is_already_running()) {
-        constexpr auto mes = _(L"短愚蛮怒はすでに起動しています。", L"Hengband is already running.");
+        constexpr auto mes = _(L"短愚蛮怒はすでに起動しています。", L"Tangband is already running.");
         constexpr auto caption = _(L"エラー！", L"Error");
         MessageBoxW(NULL, mes, caption, MB_ICONEXCLAMATION | MB_OK | MB_ICONSTOP);
         return 0;
