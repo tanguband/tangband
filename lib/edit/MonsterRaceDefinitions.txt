@@ -307,7 +307,7 @@ B:MOAN:FLAVOR
 B:MOAN:FLAVOR
 B:HIT:HURT:1d5
 F:UNIQUE | MALE | SPEAK_ALL | DROP_CORPSE | FRIENDLY
-F:FORCE_MAXHP | WILD_TOWN | WILD_ONLY | ONLY_ITEM | DROP_90 | DROP_GREAT
+F:FORCE_MAXHP | WILD_TOWN | WILD_ONLY | ONLY_ITEM | DROP_GREAT
 F:OPEN_DOOR | BASH_DOOR | HAS_LITE_1 | NO_CONF | NO_SLEEP
 D:$Before you appears a broad thick-set hobbit with a round red face. 
 D:$"What's wrong with old Maggot?" asked Pippin.  "He's a good friend to 
@@ -480,7 +480,7 @@ W:0:255:0:0:0
 B:HIT:HURT:1d3
 F:UNIQUE | MALE | ANIMAL | SPEAK_ALL
 F:FORCE_MAXHP | DROP_CORPSE | WILD_TOWN | WILD_ONLY
-F:DROP_90 | DROP_GREAT | HUMAN |
+F:DROP_GREAT | HUMAN |
 F:OPEN_DOOR | BASH_DOOR | HAS_LITE_1 |
 F:NO_CONF | NO_SLEEP
 
@@ -1116,7 +1116,7 @@ B:TOUCH:EAT_GOLD
 F:UNIQUE | MALE | EVIL | CAN_SWIM | DROP_SKELETON | DROP_CORPSE
 F:FORCE_MAXHP | SPEAK_ALL | SMART | 
 F:RAND_50 | RAND_25 | WILD_ALL
-F:ONLY_ITEM | DROP_90 | DROP_GREAT
+F:ONLY_ITEM | DROP_GREAT
 F:TAKE_ITEM | OPEN_DOOR | BASH_DOOR | INVISIBLE
 D:$"Down the face of a precipice, sheer and almost smooth it seemed in the pale 
 D:$moonlight, a small black shape was moving with its thin limbs splayed out. 
