@@ -3,24 +3,24 @@
 AUTOMAKE_OPTIONS = foreign
 
 visual_studio_files = \
-	Hengband/Hengband.sln \
-	Hengband/Hengband/curl/include/curl/curl.h \
-	Hengband/Hengband/curl/include/curl/curlver.h \
-	Hengband/Hengband/curl/include/curl/easy.h \
-	Hengband/Hengband/curl/include/curl/header.h \
-	Hengband/Hengband/curl/include/curl/mprintf.h \
-	Hengband/Hengband/curl/include/curl/multi.h \
-	Hengband/Hengband/curl/include/curl/options.h \
-	Hengband/Hengband/curl/include/curl/stdcheaders.h \
-	Hengband/Hengband/curl/include/curl/system.h \
-	Hengband/Hengband/curl/include/curl/typecheck-gcc.h \
-	Hengband/Hengband/curl/include/curl/urlapi.h \
-	Hengband/Hengband/curl/include/curl/websockets.h \
-	Hengband/Hengband/curl/lib/libcurl_a.lib \
-	Hengband/Hengband/curl/lib/libcurl_a_debug.lib \
-	Hengband/Hengband/Hengband.vcxproj \
-	Hengband/Hengband/Hengband.vcxproj.filters \
-	Hengband/Hengband/packages.config
+	Tangband/Tangband.sln \
+	Tangband/Tangband/curl/include/curl/curl.h \
+	Tangband/Tangband/curl/include/curl/curlver.h \
+	Tangband/Tangband/curl/include/curl/easy.h \
+	Tangband/Tangband/curl/include/curl/header.h \
+	Tangband/Tangband/curl/include/curl/mprintf.h \
+	Tangband/Tangband/curl/include/curl/multi.h \
+	Tangband/Tangband/curl/include/curl/options.h \
+	Tangband/Tangband/curl/include/curl/stdcheaders.h \
+	Tangband/Tangband/curl/include/curl/system.h \
+	Tangband/Tangband/curl/include/curl/typecheck-gcc.h \
+	Tangband/Tangband/curl/include/curl/urlapi.h \
+	Tangband/Tangband/curl/include/curl/websockets.h \
+	Tangband/Tangband/curl/lib/libcurl_a.lib \
+	Tangband/Tangband/curl/lib/libcurl_a_debug.lib \
+	Tangband/Tangband/Tangband.vcxproj \
+	Tangband/Tangband/Tangband.vcxproj.filters \
+	Tangband/Tangband/packages.config
 
 EXTRA_DIST = \
 	autopick.txt \
@@ -30,7 +30,7 @@ EXTRA_DIST = \
 	readme_angband \
 	readme-eng.md \
 	THIRD-PARTY-NOTICES.txt \
-	hengband.spec \
+	Tangband.spec \
 	$(visual_studio_files)
 
 SUBDIRS = src lib
