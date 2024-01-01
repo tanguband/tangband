@@ -2,7 +2,7 @@
 
 AUTOMAKE_OPTIONS = foreign subdir-objects nostdinc
 
-bin_PROGRAMS = Tangband
+bin_PROGRAMS = tangband
 
 tangband_SOURCES = \
 	action/action-limited.cpp action/action-limited.h \
@@ -1078,13 +1078,13 @@ stdafx.h.gch: stdafx.h stdafx.cpp Makefile
 		$(PCH_CHECKSUMMER) $@ > "$@".sum ; \
 	fi
 
-$(hengband_SOURCES:.cpp=.$(OBJEXT)): stdafx.h.gch
+$(Tangband_SOURCES:.cpp=.$(OBJEXT)): stdafx.h.gch
 endif
 
 install-exec-hook:
 if SET_GID
-	chgrp "@GAMEGROUP@" "$(DESTDIR)$(bindir)/hengband"
-	chmod g+s "$(DESTDIR)$(bindir)/hengband"
+	chgrp "@GAMEGROUP@" "$(DESTDIR)$(bindir)/tangband"
+	chmod g+s "$(DESTDIR)$(bindir)/tangband"
 endif
 
 clean-local:
