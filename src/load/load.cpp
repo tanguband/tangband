@@ -396,7 +396,7 @@ bool load_savedata(PlayerType *player_ptr, bool *new_game)
         auto is_old_ver = (10 <= tmp_major) && (tmp_major <= 13);
         if (tmp_major == variant_length) {
             if (std::string_view(&tmp_ver[1], variant_length) != VARIANT_NAME) {
-                throw(_("セーブデータのバリアントは短愚蛮怒以外です", "The variant of save data is other than tangband!"));
+                throw(_("セーブデータのバリアントは短愚蛮怒以外です", "The variant of save data is other than Tangband!"));
             }
 
             w_ptr->sf_extra = tmp_ver[version_length - 1];
