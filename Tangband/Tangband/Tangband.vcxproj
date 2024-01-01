@@ -227,7 +227,6 @@
     <ClCompile Include="..\..\src\action\travel-execution.cpp" />
     <ClCompile Include="..\..\src\action\tunnel-execution.cpp" />
     <ClCompile Include="..\..\src\action\weapon-shield.cpp" />
-    <ClCompile Include="..\..\src\artifact\artifact-info.cpp" />
     <ClCompile Include="..\..\src\artifact\fixed-art-generator.cpp" />
     <ClCompile Include="..\..\src\artifact\random-art-activation.cpp" />
     <ClCompile Include="..\..\src\artifact\random-art-characteristics.cpp" />
