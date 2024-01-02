@@ -25,7 +25,7 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
     New-Item $tangbandDir -ItemType Directory
 
     # 必要なファイルをコピーして、その中で不要になりえるものを削除
-    Copy-Item -Verbose -Path .\Tangband.exe, .\readme_angband, .\THIRD-PARTY-NOTICES.txt -Destination $tangbandDir
+    Copy-Item -Verbose -Path .\Tangband.exe, .\readme_angband, .\readme-hengband.md, .\THIRD-PARTY-NOTICES.txt -Destination $tangbandDir
     Copy-Item -Verbose -Path $package_unique_files -Destination $tangbandDir
     Copy-Item -Verbose -Recurse -Path .\lib -Destination $tangbandDir -Exclude Makefile.am, *.raw, .gitattributes
     Copy-Item -Verbose -Path .\lib\apex\h_scores.raw -Destination $tangbandDir\lib\apex
