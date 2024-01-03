@@ -3984,7 +3984,7 @@ E:Detection:Platinum
 G:-:w
 I:66:6:9
 W:30:15:5000
-A:30/2
+A:30/1
 P:0:1d1:0:0:0
 D:$It detects all traps, doors, stairs, treasures, items and monsters in the 
 D:$neighborhood when you zap it.
