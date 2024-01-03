@@ -59,13 +59,13 @@ F:*:FLOOR:8:0:354
 F:=:FLOOR:8:0:371
 
 # Detection
-F:/:FLOOR:8:0:375
+F:~:FLOOR:8:0:375
 
 # Dungeon layout
 D:XXXXXXXXXXXXXXX
 D:X^...a....X*+TX
 D:X.........D..-X
-D:X.........Xb=/X
+D:X.........Xb=~X
 D:XXXXX.....XXXXX
 D:XT..D........aX
 D:X.b.X.........X
