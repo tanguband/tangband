@@ -49,26 +49,26 @@ F:^:TRAP_ALARM:12
 # Trap Location
 F:-:FLOOR:8:0:352
 
-# Enlightenment
+# Probing
 F:+:FLOOR:8:0:353
 
 # Recall
-F:=:FLOOR:8:0:354
+F:*:FLOOR:8:0:354
 
-# Illumination
-F:~:FLOOR:8:0:355
+# Enlightenment
+F:=:FLOOR:8:0:371
 
-# Perception
-F:*:FLOOR:8:0:372
+# Detection
+F:/:FLOOR:8:0:375
 
 # Dungeon layout
 D:XXXXXXXXXXXXXXX
-D:X^...a....X.=TX
+D:X^...a....X*+TX
 D:X.........D..-X
-D:X.........Xb*~X
+D:X.........Xb=/X
 D:XXXXX.....XXXXX
 D:XT..D........aX
-D:X+b.X.........X
+D:X.b.X.........X
 D:XXXXX.........X
 D:X<..D.........X
 D:XXXXXXXXXXXXXXX
