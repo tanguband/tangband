@@ -66,30 +66,30 @@ F:0:FLOOR:8:46
 
 # Potion of cure critical wounds
 F:!:FLOOR:10:0:241
-# Potion of booze
-F:3:FLOOR:10:0:247
 # Scroll of Teleportation
 F:?:FLOOR:8:0:186
-# Magic Missile
-F:6:FLOOR:8:0:282
-# Brass Lantern
-F:7:FLOOR:8:0:347
-# Flask of oil
-F:8:FLOOR:8:0:348
+# Illumination
+F:6:FLOOR:8:0:355
+# Feanorian Lamp
+F:7:FLOOR:8:0:582
+# Perception
+F:8:FLOOR:8:0:372
+# Pesticide
+F:9:FLOOR:8:0:378
 
 # Dungeon layout
 D:XXXXXXXXXXXXXXXXXXXXXX
 D:X.................87<X
 D:X...........X++++++X.X
-D:X...........X0v~~~~X.X
+D:X...........X0v!!!!X.X
 D:X.XXXX++++XXXX4444XX.X
 D:X.X    %           X.X
-D:X.+   ! !     %    +.X
+D:X.+   ! ! ! ! %    +.X
 D:X.+ !         !(   +.X
 D:X.X  XXDXXXXX % %  +.X
-D:X.X  X %2~X|D    ? +.X
-D:X6X  XXDX&X~2      X.X
-D:X61  X??X|X~D%??   X.X
+D:X.X  X %2?X|D    ? +.X
+D:X6X  XXDX&X?2      X.X
+D:X91  X??X|X?D%???? X.X
 D:XXXXXXXXXXXXXXXXXXXXXX
 
 # Starting position
