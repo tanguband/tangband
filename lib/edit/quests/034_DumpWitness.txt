@@ -48,8 +48,8 @@ F: :FLOOR:10
 # deep water
 F:v:DEEP_WATER:8
 
-# Small wooden chest
-F:&:FLOOR:8:0:338
+# Large steel chest
+F:&:FLOOR:8:0:343
 # Ruined chest
 F:~:FLOOR:8:0:344
 
@@ -68,28 +68,30 @@ F:0:FLOOR:8:46
 F:!:FLOOR:10:0:241
 # Scroll of Teleportation
 F:?:FLOOR:8:0:186
+# Disarming
+F:5:FLOOR:8:0:365
 # Illumination
 F:6:FLOOR:8:0:355
 # Feanorian Lamp
 F:7:FLOOR:8:0:582
 # Perception
 F:8:FLOOR:8:0:372
-# Pesticide
-F:9:FLOOR:8:0:378
+# Magic Missile
+F:9:FLOOR:8:0:282
 
 # Dungeon layout
 D:XXXXXXXXXXXXXXXXXXXXXX
 D:X.................87<X
 D:X...........X++++++X.X
-D:X...........X0v!!!!X.X
+D:X...........X0v???64.X
 D:X.XXXX++++XXXX4444XX.X
-D:X.X    %           X.X
-D:X.+   ! ! ! ! %    +.X
-D:X.+ !         !(   +.X
-D:X.X  XXDXXXXX % %  +.X
-D:X.X  X %2?X|D    ? +.X
-D:X6X  XXDX&X?2      X.X
-D:X91  X??X|X?D%???? X.X
+D:X.X                X.X
+D:X.+           !!!  +.X
+D:X.+  99       !(!  +.X
+D:X.X  XXDXXXXX !!!  +.X
+D:X.X  X?%2?X|D?     +.X
+D:X.X  XXDX&X!2?     X.X
+D:X51  X??X|X!D?     X.X
 D:XXXXXXXXXXXXXXXXXXXXXX
 
 # Starting position
