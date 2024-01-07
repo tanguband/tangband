@@ -174,8 +174,8 @@ static element_type_list element_types = {
     {
         ElementRealmType::CHAOS, {
             _("混沌", "Chaos"),
-            { { AttributeType::CONFUSION, AttributeType::CHAOS, AttributeType::NEXUS } },
-            { { _("混乱", "Confusion"), _("カオス", "Chaos"), _("因果混乱", "Nexus") } },
+            { { AttributeType::NEXUS, AttributeType::CONFUSION, AttributeType::CHAOS } },
+            { { _("因果混乱", "Nexus"), _("混乱", "Confusion"), _("カオス", "Chaos") } },
             { },
         }
     },
