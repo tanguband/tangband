@@ -3882,7 +3882,7 @@ N:365:トラップ解除:ジルコンの
 E:Disarming:Zirconium
 G:-:W
 I:66:14:5
-W:10:15:2100
+W:1:15:2100
 A:10/1
 P:0:1d1:0:0:0
 D:$It fires a beam that destroys all traps along a line when you zap it.
