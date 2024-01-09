@@ -13,7 +13,6 @@
 #include "io/write-diary.h"
 #include "monster-floor/monster-remover.h"
 #include "monster-race/monster-race.h"
-#include "monster-race/race-flags-resistance.h"
 #include "monster-race/race-flags1.h"
 #include "monster-race/race-flags3.h"
 #include "monster-race/race-flags7.h"
@@ -45,7 +44,7 @@ bool genocide_aux(PlayerType *player_ptr, MONSTER_IDX m_idx, int power, bool pla
 {
     auto &floor = *player_ptr->current_floor_ptr;
     auto &monster = floor.m_list[m_idx];
-    auto &monrace = monster.get_monrace();
+    const auto &monrace = monster.get_monrace();
     if (monster.is_pet() && !player_cast) {
         return false;
     }
@@ -53,8 +52,7 @@ bool genocide_aux(PlayerType *player_ptr, MONSTER_IDX m_idx, int power, bool pla
     auto resist = false;
     if (monrace.kind_flags.has(MonsterKindType::UNIQUE) || any_bits(monrace.flags1, RF1_QUESTOR)) {
         resist = true;
-    } else if (monrace.resistance_flags.has(MonsterResistanceType::NO_INSTANTLY_DEATH)) {
-        monrace.r_resistance_flags.set(MonsterResistanceType::NO_INSTANTLY_DEATH);
+    } else if (monrace.flags7 & RF7_UNIQUE2) {
         resist = true;
     } else if (m_idx == player_ptr->riding) {
         resist = true;

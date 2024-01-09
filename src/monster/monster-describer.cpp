@@ -3,7 +3,6 @@
 #include "locale/english.h"
 #include "monster-race/monster-race.h"
 #include "monster-race/race-flags1.h"
-#include "monster-race/race-sex-const.h"
 #include "monster/monster-description-types.h"
 #include "monster/monster-flag-types.h"
 #include "monster/monster-info.h"
@@ -28,12 +27,15 @@ static int get_monster_pronoun_kind(const MonsterRaceInfo &monrace, const bool p
     if (!pron) {
         return 0x00;
     }
-    if (monrace.sex == MonsterSex::FEMALE) {
+
+    if (any_bits(monrace.flags1, RF1_FEMALE)) {
         return 0x20;
     }
-    if (monrace.sex == MonsterSex::MALE) {
+
+    if (any_bits(monrace.flags1, RF1_MALE)) {
         return 0x10;
     }
+
     return 0x00;
 }
 
@@ -114,11 +116,11 @@ static std::optional<std::string> get_monster_self_pronoun(const MonsterEntity &
         return std::nullopt;
     }
 
-    if (monrace.sex == MonsterSex::FEMALE) {
+    if (any_bits(monrace.flags1, RF1_FEMALE)) {
         return _("彼女自身", "herself");
     }
 
-    if (monrace.sex == MonsterSex::MALE) {
+    if (any_bits(monrace.flags1, RF1_MALE)) {
         return _("彼自身", "himself");
     }
 
