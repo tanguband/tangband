@@ -6,7 +6,7 @@
 /*!
  * @brief 現在のバリアント名
  */
-constexpr std::string_view VARIANT_NAME("Tangband");
+constexpr std::string_view VARIANT_NAME("tangband");
 
 /*!
  * @brief 基底バリアント名
@@ -14,7 +14,7 @@ constexpr std::string_view VARIANT_NAME("Tangband");
  * 変愚蛮怒から更にバリアントを派生させても、ここは変更しないこと.
  * 変更ではなく削除はOKだが、h_older_than() 及びそれを呼んでいる箇所全てを削除すること.
  */
-constexpr std::string_view ROOT_VARIANT_NAME("Hengband");
+constexpr std::string_view ROOT_VARIANT_NAME("tangband");
 
 /*!
  * @brief セーブファイル上のバージョン定義
@@ -46,7 +46,7 @@ enum class VersionStatusType {
 /*!
  * @brief バージョンの立ち位置
  */
-constexpr VersionStatusType VERSION_STATUS = VersionStatusType::BETA;
+constexpr VersionStatusType VERSION_STATUS = VersionStatusType::RELEASE;
 
 enum class VersionExpression {
     WITHOUT_EXTRA,
