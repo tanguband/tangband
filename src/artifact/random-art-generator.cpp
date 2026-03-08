@@ -185,7 +185,7 @@ static bool decide_random_art_cursed(const bool a_scroll, ItemEntity *o_ptr)
 static int decide_random_art_power(const bool a_cursed)
 {
     int powers = randint1(5) + 1;
-    while (one_in_(powers) || one_in_(3) || one_in_(5)) {
+    while (one_in_(2) || one_in_(2) || one_in_(2)) {
         powers++;
     }
 
@@ -262,8 +262,8 @@ static void strengthen_pval(ItemEntity *o_ptr)
         } while (o_ptr->pval < randint1(5) || one_in_(o_ptr->pval));
     }
 
-    if ((o_ptr->pval > 4) && !one_in_(CHANCE_STRENGTHENING)) {
-        o_ptr->pval = 4;
+    if ((o_ptr->pval > 6) && !one_in_(CHANCE_STRENGTHENING)) {
+        o_ptr->pval = 6;
     }
 }
 
@@ -275,7 +275,7 @@ static void strengthen_pval(ItemEntity *o_ptr)
 static void invest_positive_modified_value(ItemEntity *o_ptr)
 {
     if (o_ptr->is_protector()) {
-        o_ptr->to_a += randnum1<short>(o_ptr->to_a > 19 ? 1 : 20 - o_ptr->to_a);
+        o_ptr->to_a += randnum1<short>(o_ptr->to_a > 29 ? 1 : 30 - o_ptr->to_a);
         return;
     }
 
@@ -283,8 +283,8 @@ static void invest_positive_modified_value(ItemEntity *o_ptr)
         return;
     }
 
-    o_ptr->to_h += randnum1<short>(o_ptr->to_h > 19 ? 1 : 20 - o_ptr->to_h);
-    o_ptr->to_d += randnum1<short>(o_ptr->to_d > 19 ? 1 : 20 - o_ptr->to_d);
+    o_ptr->to_h += randnum1<short>(o_ptr->to_h > 29 ? 1 : 30 - o_ptr->to_h);
+    o_ptr->to_d += randnum1<short>(o_ptr->to_d > 29 ? 1 : 30 - o_ptr->to_d);
     if ((o_ptr->art_flags.has(TR_WIS)) && (o_ptr->pval > 0)) {
         o_ptr->art_flags.set(TR_BLESSED);
     }
@@ -301,7 +301,7 @@ static void invest_negative_modified_value(ItemEntity *o_ptr)
         return;
     }
 
-    while ((o_ptr->to_d + o_ptr->to_h) > 20) {
+    while ((o_ptr->to_d + o_ptr->to_h) > 30) {
         if (one_in_(o_ptr->to_d) && one_in_(o_ptr->to_h)) {
             break;
         }
@@ -310,7 +310,7 @@ static void invest_negative_modified_value(ItemEntity *o_ptr)
         o_ptr->to_h -= randnum0<short>(3);
     }
 
-    while ((o_ptr->to_d + o_ptr->to_h) > 10) {
+    while ((o_ptr->to_d + o_ptr->to_h) > 20) {
         if (one_in_(o_ptr->to_d) || one_in_(o_ptr->to_h)) {
             break;
         }
