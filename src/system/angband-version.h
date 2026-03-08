@@ -14,7 +14,7 @@ constexpr std::string_view VARIANT_NAME("tangband");
  * 変愚蛮怒から更にバリアントを派生させても、ここは変更しないこと.
  * 変更ではなく削除はOKだが、h_older_than() 及びそれを呼んでいる箇所全てを削除すること.
  */
-constexpr std::string_view ROOT_VARIANT_NAME("tangband");
+constexpr std::string_view ROOT_VARIANT_NAME("Hengband");
 
 /*!
  * @brief セーブファイル上のバージョン定義
