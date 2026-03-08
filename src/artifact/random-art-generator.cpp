@@ -169,7 +169,7 @@ static void decide_warrior_bias(PlayerType *player_ptr, ItemEntity *o_ptr, const
 
 static bool decide_random_art_cursed(const bool a_scroll, ItemEntity *o_ptr)
 {
-    constexpr auto chance_cursed = 13;
+    constexpr auto chance_cursed = 99;
     if (!a_scroll && one_in_(chance_cursed)) {
         return true;
     }
@@ -185,7 +185,7 @@ static bool decide_random_art_cursed(const bool a_scroll, ItemEntity *o_ptr)
 static int decide_random_art_power(const bool a_cursed)
 {
     int powers = randint1(5) + 1;
-    while (one_in_(powers) || one_in_(7) || one_in_(10)) {
+    while (one_in_(powers) || one_in_(3) || one_in_(5)) {
         powers++;
     }
 
