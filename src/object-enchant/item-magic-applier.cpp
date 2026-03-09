@@ -144,7 +144,7 @@ int ItemMagicApplier::calculate_rolls(const int power)
     }
 
     if (any_bits(this->mode, AM_GREAT | AM_SPECIAL)) {
-        rolls = 4;
+        rolls = 20;
     }
 
     if (any_bits(this->mode, AM_NO_FIXED_ART) || this->o_ptr->is_fixed_artifact()) {
