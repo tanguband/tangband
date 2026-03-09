@@ -35,7 +35,7 @@ void LiteEnchanter::apply_magic()
         return;
     }
 
-    if ((this->power == 2) || ((this->power == 1) && one_in_(3))) {
+    if ((this->power == 2) || ((this->power == 1) && one_in_(2))) {
         while (!this->o_ptr->is_ego()) {
             this->give_ego_index();
         }

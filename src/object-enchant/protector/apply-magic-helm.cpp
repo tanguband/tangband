@@ -50,7 +50,7 @@ void HelmEnchanter::apply_magic()
  */
 void HelmEnchanter::give_ego_index()
 {
-    if ((this->power > 2) || one_in_(20)) {
+    if ((this->power > 2) || one_in_(5)) {
         become_random_artifact(this->player_ptr, this->o_ptr, false);
         return;
     }

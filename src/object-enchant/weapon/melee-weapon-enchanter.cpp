@@ -40,7 +40,7 @@ void MeleeWeaponEnchanter::apply_magic()
  */
 void MeleeWeaponEnchanter::strengthen()
 {
-    if ((this->power > 2) || one_in_(40)) {
+    if ((this->power > 2) || one_in_(5)) {
         become_random_artifact(this->player_ptr, this->o_ptr, false);
         return;
     }

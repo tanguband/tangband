@@ -42,7 +42,7 @@ void ShieldEnchanter::apply_magic()
         return;
     }
 
-    if ((this->power > 2) || one_in_(20)) {
+    if ((this->power > 2) || one_in_(5)) {
         become_random_artifact(this->player_ptr, this->o_ptr, false);
         return;
     }
