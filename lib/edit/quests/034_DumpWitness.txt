@@ -49,8 +49,8 @@ F:2:OPEN_DOOR:8
 # Floor with Light
 F: :FLOOR:10
 
-# Large steel chest
-F:&:FLOOR:8:0:343
+# Large wooden chest
+F:&:FLOOR:8:0:339
 # Magic Missile
 F:~:FLOOR:8:0:282
 
@@ -82,11 +82,11 @@ F:7:FLOOR:10:0:497
 # Dungeon layout
 D:XXXXXXXXXXXXXXXXXXXXXX
 D:X...................<X
-D:X...........X+++++4X.X
+D:X...........X++++++X.X
 D:X...........XI77777X.X
 D:X.XXXX++++XXXX4444XX.X
 D:X.X    %           X.X
-D:X.+   ? ?     %    +~X
+D:X.+   ? ?     %    +.X
 D:X.+ ?         ?(   +~X
 D:X.X  XXDXXXXX % %  +~X
 D:X.X  X %23X|D    ? +5X
