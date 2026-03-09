@@ -49,10 +49,10 @@ F:2:OPEN_DOOR:8
 # Floor with Light
 F: :FLOOR:10
 
-# Small wooden chest
-F:&:FLOOR:8:0:338
-# Ruined chest
-F:~:FLOOR:8:0:344
+# Large steel chest
+F:&:FLOOR:8:0:343
+# Magic Missile
+F:~:FLOOR:8:0:282
 
 # Human Skeleton
 F:%:FLOOR:10:0:395
@@ -67,31 +67,31 @@ F:I:FLOOR:8:174
 
 # Potion of cure critical wounds
 F:!:FLOOR:10:0:241
-# Potion of booze
-F:3:FLOOR:10:0:247
+# Trap/Door Destruction
+F:3:FLOOR:10:0:204
 # Scroll of Teleportation
 F:?:FLOOR:8:0:186
 # Flask of oil
 F:5:FLOOR:10:0:348
 # Brass lantern
 F:6:FLOOR:10:0:347
-# Gold
-F:7:FLOOR:10:0:488
+# adamantite
+F:7:FLOOR:10:0:497
 
 
 # Dungeon layout
 D:XXXXXXXXXXXXXXXXXXXXXX
 D:X...................<X
-D:X...........X++++++X.X
-D:X...........XI~~~~~X.X
+D:X...........X+++++4X.X
+D:X...........XI77777X.X
 D:X.XXXX++++XXXX4444XX.X
 D:X.X    %           X.X
-D:X.+   3 3     %    +.X
-D:X.+ 3         3(   +.X
-D:X.X  XXDXXXXX % %  +.X
-D:X.X  X %2~X|D    3 +5X
-D:X.X  XXDX&X~2      X6X
-D:X.1  X??X|X~D%!!   X7X
+D:X.+   ? ?     %    +~X
+D:X.+ ?         ?(   +~X
+D:X.X  XXDXXXXX % %  +~X
+D:X.X  X %23X|D    ? +5X
+D:X.X  XXDX&X?2      X6X
+D:X.1  X??X|X?D%!!!!!27X
 D:XXXXXXXXXXXXXXXXXXXXXX
 
 # Starting position
