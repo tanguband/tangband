@@ -514,7 +514,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "SPEAK_ALL",
         "DROP_CORPSE",
         "FRIENDLY",
@@ -1032,7 +1032,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "ANIMAL",
         "SPEAK_ALL",
         "FORCE_MAXHP",
@@ -1870,7 +1870,7 @@
         "IM_FIRE",
         "IM_POIS",
         "IM_COLD",
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "RES_LITE",
         "RES_DARK",
         "RES_NETH",
@@ -2543,7 +2543,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "SPEAK_ALL",
         "FORCE_MAXHP",
         "RAND_25",
@@ -2586,7 +2586,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "SPEAK_ALL",
         "FORCE_MAXHP",
         "RAND_25",
@@ -2629,7 +2629,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "SPEAK_ALL",
         "FORCE_MAXHP",
         "RAND_25",
@@ -2722,7 +2722,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "FORCE_MAXHP",
         "DROP_SKELETON",
         "BASH_DOOR",
@@ -2996,7 +2996,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "EVIL",
         "CAN_SWIM",
         "DROP_SKELETON",
@@ -7452,7 +7452,7 @@
       "flags": [
         "BASH_DOOR",
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "DROP_CORPSE",
         "ANIMAL",
         "WILD_ONLY",
@@ -8047,7 +8047,7 @@
         "WILD_WOOD",
         "DROP_CORPSE",
         "ANIMAL",
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "FORCE_MAXHP",
       ],
       "flavor": {
@@ -8369,7 +8369,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "BASH_DOOR",
@@ -8515,7 +8515,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "SPEAK_ALL",
         "DROP_CORPSE",
         "FORCE_MAXHP",
@@ -9501,7 +9501,7 @@
       ],
       "flags": [
         "BASH_DOOR",
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "NO_CONF",
@@ -9820,7 +9820,7 @@
         "WILD_ONLY",
         "WILD_WOOD",
         "EMPTY_MIND",
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "DROP_CORPSE",
         "FORCE_MAXHP",
         "RES_WATE",
@@ -14091,7 +14091,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "EVIL",
         "SPEAK_ALL",
@@ -18970,7 +18970,7 @@
       ],
       "flags": [
         "CAN_FLY",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "DROP_CORPSE",
@@ -20346,7 +20346,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "SPEAK_ALL",
         "UNDEAD",
         "EVIL",
@@ -20410,7 +20410,7 @@
       ],
       "flags": [
         "CAN_FLY",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "DROP_CORPSE",
@@ -20551,7 +20551,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "SPEAK_ALL",
         "DROP_SKELETON",
         "DROP_CORPSE",
@@ -22759,7 +22759,7 @@
         "FORCE_MAXHP",
         "KILL_BODY",
         "KILL_ITEM",
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "DROP_GREAT",
         "REFLECTING",
         "EMPTY_MIND",
@@ -23849,7 +23849,7 @@
       ],
       "flags": [
         "CAN_FLY",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_2D2",
         "DROP_GREAT",
         "ESCORT",
         "ESCORTS",
@@ -27730,7 +27730,7 @@
       ],
       "flags": [
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "DROP_GREAT",
         "REFLECTING",
         "EMPTY_MIND",
@@ -32420,7 +32420,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "DROP_GREAT",
         "SELF_LITE_2",
         "FORCE_MAXHP",
@@ -34002,7 +34002,7 @@
       ],
       "flags": [
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "ANIMAL",
         "REGENERATE",
@@ -37432,7 +37432,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "FORCE_MAXHP",
@@ -37569,7 +37569,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "EVIL",
@@ -38021,7 +38021,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "AURA_ELEC",
         "SPEAK_ALL",
@@ -38618,7 +38618,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "FORCE_MAXHP",
@@ -38858,7 +38858,7 @@
         "IM_FIRE",
         "RES_NETH",
         "RES_CHAO",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "CAN_FLY",
@@ -47173,7 +47173,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "RES_TELE",
@@ -51419,7 +51419,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_1D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "AQUATIC",
@@ -51495,7 +51495,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_2D2", "DROP_1D2",
         "DROP_GREAT",
         "NONLIVING",
         "NO_FEAR",
@@ -52442,7 +52442,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_2D2", "DROP_1D2",
         "NEVER_MOVE",
         "ONLY_ITEM",
         "FORCE_MAXHP",
@@ -57327,7 +57327,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "NONLIVING",
@@ -60715,7 +60715,7 @@
       ],
       "flags": [
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_2D2",
         "DROP_GREAT",
         "ANIMAL",
         "CAN_FLY",
@@ -60778,7 +60778,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "DROP_CORPSE",
@@ -61411,7 +61411,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "CAN_SWIM",
         "CAN_FLY",
         "RAND_50",
@@ -62380,7 +62380,7 @@
       ],
       "flags": [
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "ANIMAL",
         "REGENERATE",
@@ -62873,7 +62873,7 @@
         "ESCORT",
         "BASH_DOOR",
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "ANIMAL",
@@ -63103,7 +63103,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_2D2",
         "DROP_GREAT",
         "NONLIVING",
         "NO_FEAR",
@@ -63319,7 +63319,7 @@
           "damage_dice": "2d6",
         },
       ],
-      "flags": ["BASH_DOOR", "DROP_GREAT", "DROP_SKELETON", "DROP_CORPSE", "FORCE_MAXHP", "EVIL", "UNIQUE"],
+      "flags": ["BASH_DOOR", "DROP_GREAT", "DROP_SKELETON", "DROP_CORPSE", "FORCE_MAXHP", "EVIL", "UNIQUE", "DROP_2D2"],
       "flavor": {
         "ja": "それは人間と雄牛の混血したモンスターだ。",
         "en": "It is a cross between a human and a bull.",
@@ -64770,7 +64770,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "DROP_GREAT",
         "SPEAK_ALL",
         "UNDEAD",
@@ -64820,7 +64820,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "DROP_GREAT",
         "GIANT",
         "SPEAK_ALL",
@@ -64889,7 +64889,7 @@
         "NO_CONF",
         "NO_SLEEP",
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "RES_CHAO",
       ],
       "skill": {
@@ -64955,7 +64955,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "WEIRD_MIND",
         "SPEAK_ALL",
         "FORCE_MAXHP",
@@ -65319,7 +65319,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_2D2",
         "CAN_FLY",
         "RAND_25",
         "RAND_50",
@@ -66270,7 +66270,7 @@
       ],
       "flags": [
         "ATTR_MULTI",
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "ANIMAL",
         "SPEAK_ALL",
         "FRIENDLY",
@@ -66703,7 +66703,7 @@
         "DROP_GREAT",
         "ONLY_ITEM",
         "FORCE_MAXHP",
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "EMPTY_MIND",
         "WILD_TOWN",
         "SPEAK_ALL",
@@ -69358,7 +69358,7 @@
         "EVIL",
         "ESCORT",
         "ESCORTS",
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "DROP_GREAT",
         "ONLY_ITEM",
@@ -70129,7 +70129,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "FORCE_MAXHP",
         "HUMAN",
         "EVIL",
@@ -70214,7 +70214,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "EVIL",
         "DROP_CORPSE",
@@ -71059,7 +71059,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "HUMAN",
         "EVIL",
@@ -71149,7 +71149,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "GOOD",
         "ANIMAL",
@@ -71194,7 +71194,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "GOOD",
         "ANIMAL",
@@ -76437,7 +76437,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_2D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "HUMAN",
@@ -78063,7 +78063,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_1D2",
         "FORCE_MAXHP",
         "OPEN_DOOR",
         "EMPTY_MIND",
@@ -78391,7 +78391,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "FORCE_MAXHP",
         "DEMON",
         "EVIL",
@@ -78817,7 +78817,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_2D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "DROP_SKELETON",
@@ -78901,7 +78901,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_2D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "DROP_SKELETON",
@@ -79188,7 +79188,7 @@
       ],
       "flags": [
         "BASH_DOOR",
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "NO_CONF",
@@ -79229,7 +79229,7 @@
           "damage_dice": "10d10",
         },
       ],
-      "flags": ["UNIQUE", "DROP_GREAT", "FORCE_MAXHP", "SMART", "SPEAK_ALL", "OPEN_DOOR", "FRIENDLY"],
+      "flags": ["UNIQUE", "DROP_4D2", "DROP_3D2", "DROP_GREAT", "FORCE_MAXHP", "SMART", "SPEAK_ALL", "OPEN_DOOR", "FRIENDLY"],
       "skill": {
         "probability": "1_IN_8",
         "list": ["INVULNER"],
@@ -79376,7 +79376,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_2D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "SMART",
@@ -79751,7 +79751,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "GOOD",
@@ -80360,7 +80360,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "FORCE_MAXHP",
         "EVIL",
         "ATTR_MULTI",
@@ -81429,7 +81429,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "DROP_GREAT",
         "FORCE_MAXHP",
         "ESCORT",
@@ -81590,7 +81590,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_3D2",
         "FORCE_MAXHP",
         "RAND_25",
         "RAND_50",
@@ -81810,7 +81810,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_3D2",
         "DROP_GREAT",
         "NO_FEAR",
         "FORCE_MAXHP",
@@ -82124,7 +82124,7 @@
           "damage_dice": "3d7",
         },
       ],
-      "flags": ["UNIQUE", "DROP_GREAT", "FORCE_MAXHP", "NONLIVING", "OPEN_DOOR", "RES_CHAO", "COLD_BLOOD"],
+      "flags": ["UNIQUE", "DROP_1D2", "DROP_GREAT", "FORCE_MAXHP", "NONLIVING", "OPEN_DOOR", "RES_CHAO", "COLD_BLOOD"],
       "flavor": {
         "ja": "それはカップ麺のかやくを最初に全部入れるタイプだ。",
         "en": "It has the personality that adds all the dried vegetable and soup powder packages to instant noodles before adding the hot water.",
@@ -82636,7 +82636,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2",
         "FORCE_MAXHP",
         "CAN_FLY",
         "BASH_DOOR",
@@ -82864,7 +82864,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_4D2", "DROP_1D2",
         "DROP_GREAT",
         "DROP_CORPSE",
         "ANIMAL",
@@ -85150,7 +85150,7 @@
         },
       ],
       "flags": [
-        "UNIQUE",
+        "UNIQUE", "DROP_2D2",
         "FORCE_MAXHP",
         "SPEAK_ALL",
         "DROP_GREAT",
