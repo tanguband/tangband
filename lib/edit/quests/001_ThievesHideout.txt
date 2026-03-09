@@ -43,16 +43,27 @@ F:a:FLOOR:8:44
 # Floor with Bandit
 F:b:FLOOR:8:150
 
+# Trap Location
+F:1:FLOOR:10:0:352
+# Recall
+F:2:FLOOR:10:0:354
+# Illumination
+F:3:FLOOR:10:0:355
+# adamantite
+F:$:FLOOR:10:0:497
+# Alarm Traps
+F:^:TRAP_ALARM:12
+
 # Dungeon layout
 D:XXXXXXXXXXXXXXX
-D:X....a....X..TX
-D:X.........D...X
-D:X.........Xb..X
+D:X^...a....X$$TX
+D:X.........D$$$X
+D:X.........Xb$2X
 D:XXXXX.....XXXXX
-D:XT..D........aX
-D:X.b.X.........X
+D:XT$$D........aX
+D:X$b$X.........X
 D:XXXXX.........X
-D:X<..D.........X
+D:X<13D.........X
 D:XXXXXXXXXXXXXXX
 
 # Starting position
