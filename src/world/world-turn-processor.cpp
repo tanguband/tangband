@@ -71,7 +71,15 @@ void WorldTurnProcessor::process_world()
     
     if (day >= 15) {
         // 15日目以降、この関数が呼ばれるたび（10ターン毎）に8体召喚
-        spawn_doomsday_serpents(this->player_ptr);
+        static int doomsday_count = 0;
+
+        // 10ターン毎に呼ばれるたびに、召喚数を1ずつ増やす（最大8）
+        if (doomsday_count < 8) {
+            doomsday_count++;
+        }
+
+        // 現在のカウント数（1→2→3...→8）だけ召喚
+        spawn_doomsday_serpents(this->player_ptr, doomsday_count);
     }
     // --- ここまで追加 ---
     const int prev_turn_in_today = ((world.game_turn - TURNS_PER_TICK) % a_day + a_day / 4) % a_day;

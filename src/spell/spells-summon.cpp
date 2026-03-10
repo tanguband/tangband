@@ -542,20 +542,20 @@ void cast_invoke_spirits(PlayerType *player_ptr, const Direction &dir)
 /**
  * @brief 終末のサーペント(ID:1395)をプレイヤーの周囲に強制召喚する
  */
-void spawn_doomsday_serpents(PlayerType *player_ptr)
+void spawn_doomsday_serpents(PlayerType *player_ptr, int count)
 {
-    // ID 1395 を直接指定
     auto r_idx = i2enum<MonraceId>(1395);
-
-    // 召喚オプション
-    // PM_ALLOW_UNIQUE: ユニーク設定でも複数出す
-    // PM_IGNORE_TERRAIN: 壁の中や水上でも強制的に出す
     BIT_FLAGS mode = PM_NO_KAGE | PM_ALLOW_UNIQUE | PM_IGNORE_TERRAIN;
 
-    // プレイヤーの周囲8マスに召喚を試みる
-    for (int i = 0; i < 8; i++) {
+    // 引数で指定された数だけ召喚する
+    for (int i = 0; i < count; i++) {
         summon_named_creature(player_ptr, 0, player_ptr->y, player_ptr->x, r_idx, mode);
     }
 
-    msg_print(_("世界が崩壊を始めた。終末の使者が空間を切り裂いて現れる！", "The world begins to collapse. Doomsday Serpents tear through space!"));
+    // 初回（1体目）の時だけ特別なメッセージを出す演出
+    if (count == 1) {
+    	msg_print(_("世界が崩壊を始めた。終末の使者が空間を切り裂いて現れる！", "The world begins to collapse. Doomsday Serpents tear through space!"));
+    } else {
+        msg_print(_("終末の使者が次々と現れる！", "Doomsday Serpents appear one after another!"));
+    }
 }

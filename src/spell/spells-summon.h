@@ -20,4 +20,4 @@ void mitokohmon(PlayerType *player_ptr);
 int summon_cyber(PlayerType *player_ptr, POSITION y, POSITION x, tl::optional<MONSTER_IDX> summoner_m_idx = tl::nullopt);
 int activate_hi_summon(PlayerType *player_ptr, POSITION y, POSITION x, bool can_pet);
 void cast_invoke_spirits(PlayerType *player_ptr, const Direction &dir);
-void spawn_doomsday_serpents(PlayerType *player_ptr);
+void spawn_doomsday_serpents(PlayerType *player_ptr, int count);
