@@ -75,8 +75,8 @@ F:?:FLOOR:8:0:186
 F:5:FLOOR:10:0:348
 # Brass lantern
 F:6:FLOOR:10:0:347
-# adamantite
-F:7:FLOOR:10:0:497
+# Gold
+F:7:FLOOR:10:0:490
 
 
 # Dungeon layout
