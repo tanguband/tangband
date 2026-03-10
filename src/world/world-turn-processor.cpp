@@ -68,6 +68,19 @@ void WorldTurnProcessor::process_world()
     int day;
     // 現在の日数を取得
     std::tie(day, std::ignore, std::ignore) = world.extract_date_time(InnerGameData::get_instance().get_start_race());
+
+    // --- カウントダウンメッセージ表示（ベルなし） ---
+    static int last_announced_day = -1;
+
+    if (day < 15) {
+        // 初回起動時、または日付が変わった瞬間に表示
+        if (last_announced_day == -1 || day != last_announced_day) {
+            int days_left = 15 - day;
+            msg_format(_("＊＊＊　終末まで 残り %d日　＊＊＊", "＊＊＊ %d days left until Doomsday ＊＊＊"), days_left);
+            last_announced_day = day;
+        }
+    }
+
     
     if (day >= 15) {
         // 15日目以降、この関数が呼ばれるたび（10ターン毎）に8体召喚
