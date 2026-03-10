@@ -261,7 +261,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -294,7 +294,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -327,7 +327,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -360,7 +360,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -469,7 +469,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -502,11 +502,11 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 2,
         },
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 2,
         },
         {
           "depth": 40,
@@ -718,7 +718,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -756,7 +756,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -789,7 +789,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -907,7 +907,7 @@
       "allocations": [
         {
           "depth": 1,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -1023,7 +1023,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 4,
         },
       ],
       "flags": ["SHOW_MODS", "TUNNEL"],
@@ -1328,11 +1328,11 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 2,
         },
         {
           "depth": 40,
-          "rarity": 1,
+          "rarity": 2,
         },
       ],
       "flags": ["SHOW_MODS"],
@@ -2789,7 +2789,7 @@
       "allocations": [
         {
           "depth": 55,
-          "rarity": 3,
+          "rarity": 1,
         },
       ],
       "flags": ["SHOW_MODS", "IGNORE_ACID", "IGNORE_COLD", "IGNORE_FIRE", "IGNORE_ELEC"],
@@ -2863,7 +2863,7 @@
       "allocations": [
         {
           "depth": 65,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["SHOW_MODS", "IGNORE_ACID", "IGNORE_COLD", "IGNORE_FIRE", "IGNORE_ELEC"],
@@ -3033,7 +3033,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 4,
         },
       ],
       "flags": ["SHOW_MODS", "TUNNEL"],
@@ -3138,7 +3138,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 4,
         },
       ],
       "flags": ["SHOW_MODS", "TUNNEL"],
@@ -4258,7 +4258,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "REFLECT"],
@@ -4373,6 +4373,10 @@
           "depth": 1,
           "rarity": 1,
         },
+        {
+          "depth": 5,
+          "rarity": 1,
+        },
       ],
       "flavor": {
         "ja": "革製の手甲で、手のひらは武器を握るために開いている。",
@@ -4407,6 +4411,10 @@
           "depth": 10,
           "rarity": 1,
         },
+        {
+          "depth": 15,
+          "rarity": 1,
+        },
       ],
       "flavor": {
         "ja": "手と手首を鋼鉄板で完全に覆うグローブだ。",
@@ -4437,6 +4445,10 @@
       "damage_bonus": 0,
       "ac_bonus": 0,
       "allocations": [
+        {
+          "depth": 10,
+          "rarity": 1,
+        },
         {
           "depth": 20,
           "rarity": 1,
@@ -4766,7 +4778,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SEARCH", "HIDE_TYPE"],
@@ -4796,7 +4808,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["TELEPORT", "CURSED"],
@@ -4951,7 +4963,7 @@
         },
         {
           "depth": 40,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_POIS"],
@@ -5011,7 +5023,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["CURSED", "STR", "HIDE_TYPE"],
@@ -5149,7 +5161,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["CURSED", "TELEPORT", "WIS", "CHR", "HIDE_TYPE", "RANDOM_CURSE0"],
@@ -5179,7 +5191,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["CURSED", "INT", "HIDE_TYPE"],
@@ -5306,7 +5318,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["CURSED", "AGGRAVATE"],
@@ -5366,7 +5378,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_STR"],
@@ -5396,7 +5408,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_INT"],
@@ -5426,7 +5438,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_WIS"],
@@ -5456,7 +5468,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_CON"],
@@ -5486,7 +5498,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_DEX"],
@@ -5516,7 +5528,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["SUST_CHR"],
@@ -9577,7 +9589,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -9734,7 +9746,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -9848,7 +9860,7 @@
       "allocations": [
         {
           "depth": 2,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -9886,7 +9898,7 @@
       "allocations": [
         {
           "depth": 3,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -9924,7 +9936,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10000,7 +10012,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10076,7 +10088,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10114,7 +10126,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 4,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10345,7 +10357,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10422,7 +10434,7 @@
       "allocations": [
         {
           "depth": 3,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -10533,7 +10545,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -10572,7 +10584,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -10611,7 +10623,7 @@
       "allocations": [
         {
           "depth": 60,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -10730,7 +10742,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10768,7 +10780,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10924,7 +10936,7 @@
         },
         {
           "depth": 50,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -10988,7 +11000,7 @@
         "type_value": 55,
         "subtype_value": 29,
       },
-      "parameter_value": 5,
+      "parameter_value": 10,
       "level": 50,
       "weight": 50,
       "cost": 7500,
@@ -11080,7 +11092,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11118,7 +11130,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11156,7 +11168,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11308,7 +11320,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11346,7 +11358,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11582,7 +11594,7 @@
         },
         {
           "depth": 50,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11620,7 +11632,7 @@
       "allocations": [
         {
           "depth": 75,
-          "rarity": 5,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -11666,7 +11678,7 @@
         },
         {
           "depth": 70,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -11780,7 +11792,7 @@
       "allocations": [
         {
           "depth": 70,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -11806,7 +11818,7 @@
         "type_value": 55,
         "subtype_value": 9,
       },
-      "parameter_value": 11,
+      "parameter_value": 22,
       "level": 20,
       "weight": 50,
       "cost": 750,
@@ -12319,7 +12331,7 @@
       "allocations": [
         {
           "depth": 75,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
     },
@@ -12472,7 +12484,7 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -12512,7 +12524,7 @@
         },
         {
           "depth": 100,
-          "rarity": 8,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -12538,7 +12550,7 @@
         "type_value": 66,
         "subtype_value": 1,
       },
-      "parameter_value": 70,
+      "parameter_value": 5,
       "level": 15,
       "weight": 15,
       "cost": 1000,
@@ -12580,7 +12592,7 @@
         "type_value": 66,
         "subtype_value": 0,
       },
-      "parameter_value": 15,
+      "parameter_value": 5,
       "level": 5,
       "weight": 15,
       "cost": 100,
@@ -12706,7 +12718,7 @@
         "type_value": 66,
         "subtype_value": 4,
       },
-      "parameter_value": 16,
+      "parameter_value": 3,
       "level": 12,
       "weight": 15,
       "cost": 1000,
@@ -12748,7 +12760,7 @@
         "type_value": 66,
         "subtype_value": 15,
       },
-      "parameter_value": 9,
+      "parameter_value": 3,
       "level": 10,
       "weight": 15,
       "cost": 500,
@@ -12802,7 +12814,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 20,
@@ -12844,7 +12856,7 @@
       "allocations": [
         {
           "depth": 13,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 25,
@@ -12886,7 +12898,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 30,
@@ -12928,11 +12940,11 @@
       "allocations": [
         {
           "depth": 18,
-          "rarity": 4,
+          "rarity": 255,
         },
         {
           "depth": 35,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -12970,11 +12982,11 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 4,
+          "rarity": 255,
         },
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -13012,11 +13024,11 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 4,
+          "rarity": 255,
         },
         {
           "depth": 30,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -13058,7 +13070,7 @@
         },
         {
           "depth": 75,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -13126,7 +13138,7 @@
         "type_value": 66,
         "subtype_value": 14,
       },
-      "parameter_value": 22,
+      "parameter_value": 5,
       "level": 35,
       "weight": 15,
       "cost": 2100,
@@ -13138,7 +13150,7 @@
       "allocations": [
         {
           "depth": 18,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 35,
@@ -13180,7 +13192,7 @@
       "allocations": [
         {
           "depth": 28,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 55,
@@ -13222,7 +13234,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 60,
@@ -13264,7 +13276,7 @@
       "allocations": [
         {
           "depth": 38,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 75,
@@ -13306,7 +13318,7 @@
       "allocations": [
         {
           "depth": 35,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 70,
@@ -13348,7 +13360,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 4,
+          "rarity": 1,
         },
         {
           "depth": 40,
@@ -13378,7 +13390,7 @@
         "type_value": 66,
         "subtype_value": 5,
       },
-      "parameter_value": 10,
+      "parameter_value": 5,
       "level": 65,
       "weight": 15,
       "cost": 10000,
@@ -13420,7 +13432,7 @@
         "type_value": 66,
         "subtype_value": 2,
       },
-      "parameter_value": 3,
+      "parameter_value": 1,
       "level": 35,
       "weight": 15,
       "cost": 13000,
@@ -13474,11 +13486,11 @@
       "allocations": [
         {
           "depth": 33,
-          "rarity": 32,
+          "rarity": 255,
         },
         {
           "depth": 65,
-          "rarity": 8,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -13504,7 +13516,7 @@
         "type_value": 66,
         "subtype_value": 9,
       },
-      "parameter_value": 999,
+      "parameter_value": 10,
       "level": 80,
       "weight": 15,
       "cost": 20000,
@@ -13520,7 +13532,7 @@
         },
         {
           "depth": 80,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -13546,7 +13558,7 @@
         "type_value": 66,
         "subtype_value": 6,
       },
-      "parameter_value": 10,
+      "parameter_value": 5,
       "level": 30,
       "weight": 15,
       "cost": 5000,
@@ -13604,7 +13616,7 @@
         },
         {
           "depth": 80,
-          "rarity": 16,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -13630,7 +13642,7 @@
         "type_value": 66,
         "subtype_value": 11,
       },
-      "parameter_value": 20,
+      "parameter_value": 10,
       "level": 60,
       "weight": 15,
       "cost": 50000,
@@ -13642,7 +13654,7 @@
       "allocations": [
         {
           "depth": 80,
-          "rarity": 64,
+          "rarity": 1,
         },
         {
           "depth": 90,
@@ -13673,7 +13685,7 @@
         "type_value": 66,
         "subtype_value": 12,
       },
-      "parameter_value": 2,
+      "parameter_value": 1,
       "level": 3,
       "weight": 15,
       "cost": 1000,
@@ -14039,7 +14051,7 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14069,7 +14081,7 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14100,7 +14112,7 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14130,7 +14142,7 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14160,7 +14172,7 @@
       "allocations": [
         {
           "depth": 1,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14190,7 +14202,7 @@
       "allocations": [
         {
           "depth": 1,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14220,7 +14232,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14250,7 +14262,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14280,7 +14292,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14310,7 +14322,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -14374,7 +14386,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_ACID", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14410,7 +14422,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_ELEC", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14446,7 +14458,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_COLD", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14482,7 +14494,7 @@
       "allocations": [
         {
           "depth": 45,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_FIRE", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14518,7 +14530,7 @@
       "allocations": [
         {
           "depth": 45,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_POIS", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14557,7 +14569,7 @@
       "allocations": [
         {
           "depth": 100,
-          "rarity": 16,
+          "rarity": 1,
         },
       ],
       "flags": [
@@ -14604,7 +14616,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 16,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_LITE", "RES_DARK", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14636,7 +14648,7 @@
       "allocations": [
         {
           "depth": 80,
-          "rarity": 16,
+          "rarity": 1,
         },
       ],
       "flags": [
@@ -14679,7 +14691,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_CONF", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14715,7 +14727,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_SOUND", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -14751,7 +14763,7 @@
       "allocations": [
         {
           "depth": 75,
-          "rarity": 16,
+          "rarity": 1,
         },
       ],
       "flags": [
@@ -14839,7 +14851,7 @@
       "allocations": [
         {
           "depth": 110,
-          "rarity": 64,
+          "rarity": 16,
         },
       ],
       "flags": [
@@ -14977,7 +14989,7 @@
       "allocations": [
         {
           "depth": 55,
-          "rarity": 4,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -15015,7 +15027,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 8,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -15053,7 +15065,7 @@
       "allocations": [
         {
           "depth": 60,
-          "rarity": 8,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -15357,7 +15369,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flags": ["RES_FEAR"],
@@ -15512,7 +15524,7 @@
       "allocations": [
         {
           "depth": 22,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_CONF"],
@@ -15574,7 +15586,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 4,
+          "rarity": 2,
         },
       ],
       "flags": ["RES_DISEN"],
@@ -15733,15 +15745,15 @@
       "allocations": [
         {
           "depth": 0,
-          "rarity": 1,
+          "rarity": 255,
         },
         {
           "depth": 1,
-          "rarity": 1,
+          "rarity": 255,
         },
         {
           "depth": 3,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -15779,7 +15791,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -15817,7 +15829,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -18566,7 +18578,7 @@
       "allocations": [
         {
           "depth": 13,
-          "rarity": 10,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -18600,15 +18612,15 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 6,
+          "rarity": 255,
         },
         {
           "depth": 30,
-          "rarity": 3,
+          "rarity": 255,
         },
         {
           "depth": 65,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -18638,7 +18650,7 @@
       "allocations": [
         {
           "depth": 5,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18668,7 +18680,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18698,7 +18710,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18728,7 +18740,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18758,7 +18770,7 @@
       "allocations": [
         {
           "depth": 25,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18788,7 +18800,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18818,7 +18830,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18848,7 +18860,7 @@
       "allocations": [
         {
           "depth": 45,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18878,7 +18890,7 @@
       "allocations": [
         {
           "depth": 80,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -18908,7 +18920,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
     },
@@ -19478,7 +19490,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 6,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -19511,7 +19523,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["XTRA_SHOTS"],
@@ -19600,7 +19612,7 @@
       "allocations": [
         {
           "depth": 65,
-          "rarity": 6,
+          "rarity": 1,
         },
       ],
       "flags": ["DEC_MANA"],
@@ -19630,7 +19642,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 8,
+          "rarity": 1,
         },
       ],
       "flavor": {
@@ -19663,7 +19675,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -19725,7 +19737,7 @@
       "allocations": [
         {
           "depth": 10,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -19885,7 +19897,7 @@
       "allocations": [
         {
           "depth": 35,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -20145,7 +20157,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -20213,11 +20225,11 @@
         },
         {
           "depth": 50,
-          "rarity": 2,
+          "rarity": 1,
         },
         {
           "depth": 60,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["SHOW_MODS"],
@@ -20393,7 +20405,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["STR", "DEX", "CON", "HIDE_TYPE"],
@@ -20458,7 +20470,7 @@
       "allocations": [
         {
           "depth": 65,
-          "rarity": 3,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -20497,7 +20509,7 @@
       "allocations": [
         {
           "depth": 85,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -20531,7 +20543,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 3,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -20871,7 +20883,7 @@
       "allocations": [
         {
           "depth": 60,
-          "rarity": 4,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -20909,11 +20921,11 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 8,
+          "rarity": 255,
         },
         {
           "depth": 30,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -20980,7 +20992,7 @@
         },
         {
           "depth": 35,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["MAGIC_MASTERY", "HIDE_TYPE"],
@@ -21162,7 +21174,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 2,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -21649,7 +21661,7 @@
       "allocations": [
         {
           "depth": 20,
-          "rarity": 6,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -21682,7 +21694,7 @@
       "allocations": [
         {
           "depth": 60,
-          "rarity": 8,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -21824,7 +21836,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 255,
         },
       ],
       "flavor": {
@@ -21862,7 +21874,7 @@
       "allocations": [
         {
           "depth": 65,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": [
