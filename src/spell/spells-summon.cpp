@@ -36,6 +36,9 @@
 #include "util/string-processor.h"
 #include "view/display-messages.h"
 
+#include "spell/spells-summon.h"
+#include "util/enum-converter.h"
+
 /*!
  * @brief トランプ魔法独自の召喚処理を行う / Handle summoning and failure of trump spells
  * @param num summon_specific()関数を呼び出す回数
@@ -534,4 +537,25 @@ void cast_invoke_spirits(PlayerType *player_ptr, const Direction &dir)
         msg_print(
             _("陰欝な声がクスクス笑う。「もうすぐおまえは我々の仲間になるだろう。弱き者よ。」", "Sepulchral voices chuckle. 'Soon you will join us, mortal.'"));
     }
+}
+
+/**
+ * @brief 終末のサーペント(ID:1395)をプレイヤーの周囲に強制召喚する
+ */
+void spawn_doomsday_serpents(PlayerType *player_ptr)
+{
+    // ID 1395 を直接指定
+    auto r_idx = i2enum<MonraceId>(1395);
+
+    // 召喚オプション
+    // PM_ALLOW_UNIQUE: ユニーク設定でも複数出す
+    // PM_IGNORE_TERRAIN: 壁の中や水上でも強制的に出す
+    BIT_FLAGS mode = PM_NO_KAGE | PM_ALLOW_UNIQUE | PM_IGNORE_TERRAIN;
+
+    // プレイヤーの周囲8マスに召喚を試みる
+    for (int i = 0; i < 8; i++) {
+        summon_named_creature(player_ptr, 0, player_ptr->y, player_ptr->x, r_idx, mode);
+    }
+
+    msg_print(_("世界が崩壊を始めた。終末の使者が空間を切り裂いて現れる！", "The world begins to collapse. Doomsday Serpents tear through space!"));
 }

@@ -48,6 +48,8 @@
 #include "world/world.h"
 #include <range/v3/view.hpp>
 
+#include "spell/spells-summon.h"
+
 WorldTurnProcessor::WorldTurnProcessor(PlayerType *player_ptr)
     : player_ptr(player_ptr)
 {
@@ -62,6 +64,16 @@ void WorldTurnProcessor::process_world()
 {
     const int a_day = TURNS_PER_TICK * TOWN_DAWN;
     const auto &world = AngbandWorld::get_instance();
+    // --- ここから追加 ---
+    int day;
+    // 現在の日数を取得
+    std::tie(day, std::ignore, std::ignore) = world.extract_date_time(InnerGameData::get_instance().get_start_race());
+    
+    if (day >= 15) {
+        // 15日目以降、この関数が呼ばれるたび（10ターン毎）に8体召喚
+        spawn_doomsday_serpents(this->player_ptr);
+    }
+    // --- ここまで追加 ---
     const int prev_turn_in_today = ((world.game_turn - TURNS_PER_TICK) % a_day + a_day / 4) % a_day;
     const int prev_min = (1440 * prev_turn_in_today / a_day) % 60;
     std::tie(std::ignore, this->hour, this->min) = world.extract_date_time(InnerGameData::get_instance().get_start_race());
