@@ -5583,7 +5583,7 @@
       "allocations": [
         {
           "depth": 30,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["INT", "WIS", "CHR", "SUST_INT", "SUST_WIS", "SUST_CHR", "HIDE_TYPE"],
@@ -5647,7 +5647,7 @@
         },
         {
           "depth": 30,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["SEARCH", "INFRA", "HIDE_TYPE"],
@@ -5677,7 +5677,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": ["TELEPORT", "CURSED"],
@@ -5767,7 +5767,7 @@
       "allocations": [
         {
           "depth": 15,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
     },
@@ -5882,7 +5882,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 1,
+          "rarity": 255,
         },
       ],
       "flags": [
@@ -15419,7 +15419,7 @@
       "allocations": [
         {
           "depth": 34,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_NETHER", "HOLD_EXP"],
@@ -15543,7 +15543,7 @@
       "allocations": [
         {
           "depth": 25,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_SHARDS"],
@@ -15604,8 +15604,8 @@
       "cost": 13000,
       "allocations": [
         {
-          "depth": 50,
-          "rarity": 2,
+          "depth": 40,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_CHAOS", "RES_CONF"],
@@ -15667,7 +15667,7 @@
       "allocations": [
         {
           "depth": 75,
-          "rarity": 6,
+          "rarity": 1,
         },
       ],
       "flags": ["RES_DISEN", "RES_POIS", "HOLD_EXP", "FREE_ACT"],
@@ -15698,7 +15698,7 @@
       "allocations": [
         {
           "depth": 50,
-          "rarity": 2,
+          "rarity": 1,
         },
       ],
       "flags": ["BLOWS"],
@@ -15854,7 +15854,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 5,
+      "cost": 50,
       "allocations": [
         {
           "depth": 1,
@@ -15883,7 +15883,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 6,
+      "cost": 60,
       "allocations": [
         {
           "depth": 1,
@@ -15912,7 +15912,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 7,
+      "cost": 70,
       "allocations": [
         {
           "depth": 1,
@@ -15941,7 +15941,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 9,
+      "cost": 90,
       "allocations": [
         {
           "depth": 1,
@@ -15974,7 +15974,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 10,
+      "cost": 100,
       "allocations": [
         {
           "depth": 1,
@@ -16007,7 +16007,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 11,
+      "cost": 110,
       "allocations": [
         {
           "depth": 1,
@@ -16040,7 +16040,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 22,
+      "cost": 220,
       "allocations": [
         {
           "depth": 1,
@@ -16077,7 +16077,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 24,
+      "cost": 240,
       "allocations": [
         {
           "depth": 1,
@@ -16114,7 +16114,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 15,
+      "cost": 150,
       "allocations": [
         {
           "depth": 1,
@@ -16151,7 +16151,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 16,
+      "cost": 160,
       "allocations": [
         {
           "depth": 1,
@@ -16188,7 +16188,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 17,
+      "cost": 170,
       "allocations": [
         {
           "depth": 1,
@@ -16225,7 +16225,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 40,
+      "cost": 400,
       "allocations": [
         {
           "depth": 1,
@@ -16262,7 +16262,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 48,
+      "cost": 480,
       "allocations": [
         {
           "depth": 1,
@@ -16299,7 +16299,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 52,
+      "cost": 520,
       "allocations": [
         {
           "depth": 1,
@@ -16336,7 +16336,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 56,
+      "cost": 560,
       "allocations": [
         {
           "depth": 1,
@@ -16373,7 +16373,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 64,
+      "cost": 640,
       "allocations": [
         {
           "depth": 1,
@@ -16410,7 +16410,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 120,
+      "cost": 1200,
       "allocations": [
         {
           "depth": 1,
@@ -16447,7 +16447,7 @@
       "parameter_value": 0,
       "level": 1,
       "weight": 0,
-      "cost": 160,
+      "cost": 1600,
       "allocations": [
         {
           "depth": 1,
@@ -17127,7 +17127,7 @@
       "allocations": [
         {
           "depth": 40,
-          "rarity": 3,
+          "rarity": 1,
         },
       ],
       "flags": ["REFLECT", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -17163,7 +17163,7 @@
         },
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": ["NO_MAGIC", "IGNORE_ACID", "IGNORE_ELEC", "IGNORE_FIRE", "IGNORE_COLD"],
@@ -17230,7 +17230,7 @@
         },
         {
           "depth": 50,
-          "rarity": 4,
+          "rarity": 1,
         },
       ],
       "flags": [
