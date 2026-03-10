@@ -49,8 +49,8 @@ F:1:FLOOR:10:0:352
 F:2:FLOOR:10:0:354
 # Illumination
 F:3:FLOOR:10:0:355
-# adamantite
-F:$:FLOOR:10:0:497
+# Gold
+F:$:FLOOR:10:0:490
 # Alarm Traps
 F:^:TRAP_ALARM:12
 
