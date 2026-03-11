@@ -44,20 +44,12 @@ static void clear_floor(PlayerType *player_ptr)
 
 static void send_world_score_on_closing(PlayerType *player_ptr, bool do_send)
 {
-    if (send_world_score(player_ptr, do_send)) {
-        return;
-    }
-
-    if (!input_check_strict(
-            player_ptr, _("後でスコアを登録するために待機しますか？", "Stand by for later score registration? "), { UserCheck::NO_ESCAPE, UserCheck::NO_HISTORY })) {
-        return;
-    }
-
-    AngbandSystem::get_instance().set_awaiting_report_score(true);
-    player_ptr->is_dead = false;
-    if (!save_player(player_ptr, SaveType::CLOSE_GAME)) {
-        msg_print(_("セーブ失敗！", "death save failed!"));
-    }
+    // 全ての処理を無効化
+    (void)player_ptr;
+    (void)do_send;
+    
+    // 何もせずに終了する
+    return;
 }
 
 /*!

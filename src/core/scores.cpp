@@ -146,33 +146,8 @@ static int highscore_add(high_score *score)
  */
 bool send_world_score(PlayerType *player_ptr, bool do_send)
 {
-#ifdef WORLD_SCORE
-    if (!send_score || !do_send) {
-        return true;
-    }
-
-    auto is_registration = input_check_strict(
-        player_ptr, _("スコアをスコア・サーバに登録しますか? ", "Do you send score to the world score server? "), { UserCheck::NO_ESCAPE, UserCheck::NO_HISTORY });
-    if (!is_registration) {
-        return true;
-    }
-
-    prt("", 0, 0);
-    prt(_("送信中．．", "Sending..."), 0, 0);
-    term_fresh();
-    screen_save();
-    auto successful_send = report_score(player_ptr);
-    screen_load();
-    if (!successful_send) {
-        return false;
-    }
-
-    prt(_("完了。何かキーを押してください。", "Completed.  Hit any key."), 0, 0);
-    (void)inkey();
-#else
     (void)player_ptr;
     (void)do_send;
-#endif
     return true;
 }
 
