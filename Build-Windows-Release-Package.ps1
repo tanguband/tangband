@@ -14,7 +14,7 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
     Write-Host "Building $build_conf..." -ForegroundColor Cyan
     
     # バイナリをリビルド
-    MSBuild.exe .\VisualStudio\Hengband.sln /t:Rebuild /p:Configuration=$build_conf /p:Platform=x86
+    MSBuild.exe .\VisualStudio\Hengband.sln /t:Rebuild /p:Configuration=$build_conf /p:Platform=x64
 
     if ($LASTEXITCODE -ne 0) {
         Write-Error "Build failed for $build_conf"
@@ -23,11 +23,11 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
 
     # 生成されたバイナリの場所を指定 (VSの標準出力先)
     # プロジェクトの構造に合わせて調整してください
-    $outDir = ".\VisualStudio\Hengband\$build_conf"
+    $outDir = ".\VisualStudio\x64\$build_conf"
     
     # もし English-Release の場合、出力先フォルダ名が異なる場合があるため補正
     if ($build_conf -eq "English-Release") {
-        $outDir = ".\VisualStudio\Hengband\English-Release"
+        $outDir = ".\VisualStudio\x64\English-Release"
     }
 
     # 作業用テンポラリフォルダ
