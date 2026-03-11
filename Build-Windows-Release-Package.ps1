@@ -35,16 +35,24 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
     $tangbandDir = Join-Path $tempDir $package_name
     New-Item $tangbandDir -ItemType Directory
 
-    # 必要なファイルをコピー (コピー元パスを $outDir に修正)
-    Copy-Item -Verbose -Path "$outDir\tangband.exe", "$outDir\tangband.pdb" -Destination $tangbandDir
-    Copy-Item -Verbose -Path .\readme_angband, .\THIRD-PARTY-NOTICES.txt -Destination $tangbandDir
-    Copy-Item -Verbose -Path $package_unique_files -Destination $tangbandDir
-    Copy-Item -Verbose -Recurse -Path .\lib -Destination $tangbandDir -Exclude Makefile.am, *.raw, .gitattributes
+# --- 修正箇所 ---
+    # 1. ビルドで生成された実際のファイル名（Hengband.exe）を指定
+    # 2. コピー先で tangband.exe にリネームする
     
-    # スコアファイル等の整理
-    if (Test-Path "$tangbandDir\lib\apex\h_scores.raw") {
-        Copy-Item -Verbose -Path .\lib\apex\h_scores.raw -Destination $tangbandDir\lib\apex
+    $exeSource = ".\Hengband.exe"
+    if (Test-Path $exeSource) {
+        Copy-Item -Verbose -Path $exeSource -Destination "$tangbandDir\tangband.exe"
+    } else {
+        Write-Error "Hengband.exe not found in root directory!"
+        exit 1
     }
+
+    # PDB（デバッグ情報）ファイルも同様に処理（もしあれば）
+    $pdbSource = ".\VisualStudio\Hengband\$build_conf\Hengband.pdb"
+    if (Test-Path $pdbSource) {
+        Copy-Item -Verbose -Path $pdbSource -Destination "$tangbandDir\tangband.pdb"
+    }
+    # ----------------
     Remove-Item -Verbose -Exclude delete.me -Recurse -Path $tangbandDir\lib\save\*, $tangbandDir\lib\user\*
     Remove-Item -Verbose -Exclude music.cfg, readme.txt, *.mp3 -Path $tangbandDir\lib\xtra\music\*
 
