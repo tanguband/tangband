@@ -1,30 +1,35 @@
 name: Create Release
 
 on:
-  push:
-    branches:
-      - master
-  # 手動トリガーを許可
+  # 手動トリガーのみを有効にする
   workflow_dispatch:
-
 
 jobs:
   publish-release-page:
     name: Publish Release Page
     runs-on: windows-2022
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
 
       - name: Extract version from configure.ac
         id: get_version
+        shell: pwsh
         run: |
-          $version = Select-String -Path configure.ac -Pattern 'AC_INIT\(hengband, (.+?)\)' | ForEach-Object { $_.Matches.Groups[1].Value }
-          echo "version=$version" >> $Env:GITHUB_OUTPUT
+          $content = Get-Content configure.ac -Raw
+          if ($content -match 'AC_INIT\([^,]+,\s*([^)]+)\)') {
+              $version = $Matches[1].Trim()
+              echo "version=$version" >> $Env:GITHUB_OUTPUT
+          } else {
+              Write-Error "Could not find version in configure.ac"
+              exit 1
+          }
 
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1
+        uses: microsoft/setup-msbuild@v2
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
@@ -34,14 +39,18 @@ jobs:
           NuGet restore .\VisualStudio\Hengband.sln
 
       - name: Build Windows Release Package
+        shell: pwsh
         run: |
           .\Build-Windows-Release-Package.ps1 -Version ${{ steps.get_version.outputs.version }}
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
-          files: Hengband-*.zip
-          name: ${{ steps.get_version.outputs.version }}
-          tag_name: ${{ steps.get_version.outputs.version }}
+          files: Tangband-*.zip
+          name: Tangband ${{ steps.get_version.outputs.version }}
+          tag_name: v${{ steps.get_version.outputs.version }}
           generate_release_notes: true
           draft: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
