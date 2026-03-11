@@ -23,11 +23,11 @@ function BuildPackage ($package_name, $package_unique_files, $build_conf) {
 
     # 生成されたバイナリの場所を指定 (VSの標準出力先)
     # プロジェクトの構造に合わせて調整してください
-    $outDir = ".\VisualStudio\$build_conf"
+    $outDir = "."
     
     # もし English-Release の場合、出力先フォルダ名が異なる場合があるため補正
     if ($build_conf -eq "English-Release") {
-        $outDir = ".\VisualStudio\English-Release"
+        $outDir = "."
     }
 
     # 作業用テンポラリフォルダ
