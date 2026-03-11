@@ -1,70 +1,77 @@
 Param(
-    # パッケージに付加するバージョン
     [parameter(Mandatory = $true)][string]$Version
 )
 
-# GitHub Actions環境では MSBuild へのパスは自動で通るため、
-# ローカル実行時のみパスを通すようにガードをかけます
+# 1. MSBuildの準備 (Actions環境なら何もしない)
 if (-not (Get-Command "MSBuild.exe" -ErrorAction SilentlyContinue)) {
     $msbuild_path = 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin'
     $Env:Path = $msbuild_path + ";" + $Env:Path
 }
 
 function BuildPackage ($package_name, $package_unique_files, $build_conf) {
-    Write-Host "Building $build_conf..." -ForegroundColor Cyan
-    
-    # バイナリをリビルド
+    Write-Host "--- Starting Build: $package_name ($build_conf) ---" -ForegroundColor Cyan
+
+    # 2. ビルド実行
+    # PlatformはWin32で成功しているため維持
     MSBuild.exe .\VisualStudio\Hengband.sln /t:Rebuild /p:Configuration=$build_conf /p:Platform=Win32
-
     if ($LASTEXITCODE -ne 0) {
-        Write-Error "Build failed for $build_conf"
-        exit 1
+        Write-Error "Build failed for $build_conf"; exit 1
     }
 
-    # 生成されたバイナリの場所を指定 (VSの標準出力先)
-    # プロジェクトの構造に合わせて調整してください
-    $outDir = "."
+    # 3. 作業用フォルダの作成
+    $tempDir = New-Item -ItemType Directory -Path (Join-Path $env:TEMP ([Guid]::NewGuid().ToString()))
+    $destDir = New-Item -ItemType Directory -Path (Join-Path $tempDir $package_name)
+
+    # 4. ファイルのコピー (堅牢な方法)
+    # EXEはルートにあることがログで判明しているため、リネームしてコピー
+    if (Test-Path ".\Hengband.exe") {
+        Copy-Item -Path ".\Hengband.exe" -Destination (Join-Path $destDir "tangband.exe")
+    }
     
-    # もし English-Release の場合、出力先フォルダ名が異なる場合があるため補正
-    if ($build_conf -eq "English-Release") {
-        $outDir = "."
+    # PDBはVisualStudioフォルダ内にある可能性が高い
+    $pdbPath = ".\VisualStudio\Hengband\Release\Hengband.pdb"
+    if (Test-Path $pdbPath) {
+        Copy-Item -Path $pdbPath -Destination (Join-Path $destDir "tangband.pdb")
     }
 
-    # 作業用テンポラリフォルダ
-    $tempDir = New-TemporaryFile | ForEach-Object { Remove-Item $_; New-Item $_ -ItemType Directory }
-    $tangbandDir = Join-Path $tempDir $package_name
-    New-Item $tangbandDir -ItemType Directory
+    # ルートのドキュメント類
+    foreach ($f in @(".\readme_angband", ".\THIRD-PARTY-NOTICES.txt")) {
+        if (Test-Path $f) { Copy-Item $f -Destination $destDir }
+    }
+    foreach ($f in $package_unique_files) {
+        if (Test-Path $f) { Copy-Item $f -Destination $destDir }
+    }
 
-# --- 修正箇所 ---
-    # 1. ビルドで生成された実際のファイル名（Hengband.exe）を指定
-    # 2. コピー先で tangband.exe にリネームする
+    # 5. libフォルダのコピー
+    if (Test-Path ".\lib") {
+        # libフォルダそのものをコピー
+        Copy-Item -Path ".\lib" -Destination $destDir -Recurse -Exclude Makefile.am, *.raw, .gitattributes
+    }
+
+    # 6. 不要ファイルの削除 (エラーが出ても無視する設定)
+    # -ErrorAction SilentlyContinue を付けることで、フォルダがなくても止まらないようにします
+    $cleanupPaths = @(
+        "$destDir\lib\save\*",
+        "$destDir\lib\user\*",
+        "$destDir\lib\xtra\music\*"
+    )
+    foreach ($path in $cleanupPaths) {
+        if (Test-Path $path) {
+            Remove-Item -Path $path -Recurse -Force -Exclude delete.me, music.cfg, readme.txt -ErrorAction SilentlyContinue
+        }
+    }
+
+    # 7. Zip作成
+    $zipPath = Join-Path (Get-Location) "${package_name}.zip"
+    if (Test-Path $zipPath) { Remove-Item $zipPath }
     
-    $exeSource = ".\Hengband.exe"
-    if (Test-Path $exeSource) {
-        Copy-Item -Verbose -Path $exeSource -Destination "$tangbandDir\tangband.exe"
-    } else {
-        Write-Error "Hengband.exe not found in root directory!"
-        exit 1
-    }
+    Write-Host "Creating Zip: $zipPath"
+    Compress-Archive -Path "$destDir" -DestinationPath $zipPath -Force
 
-    # PDB（デバッグ情報）ファイルも同様に処理（もしあれば）
-    $pdbSource = ".\VisualStudio\Hengband\$build_conf\Hengband.pdb"
-    if (Test-Path $pdbSource) {
-        Copy-Item -Verbose -Path $pdbSource -Destination "$tangbandDir\tangband.pdb"
-    }
-    # ----------------
-    Remove-Item -Verbose -Exclude delete.me -Recurse -Path $tangbandDir\lib\save\*, $tangbandDir\lib\user\*
-    Remove-Item -Verbose -Exclude music.cfg, readme.txt, *.mp3 -Path $tangbandDir\lib\xtra\music\*
-
-    # zipアーカイブ作成
-    $package_path = Join-Path $(Get-Location) "${package_name}.zip"
-    Get-ChildItem -Path $tempDir | Compress-Archive -Force -Verbose -DestinationPath $package_path
-
-    # 作業用テンポラリフォルダ削除
-    Remove-Item -Recurse -Force $tempDir
+    # 8. 後片付け
+    Remove-Item -Path $tempDir -Recurse -Force
 }
 
-# 日本語版 (YAMLの指定に合わせて T を大文字に)
-BuildPackage -package_name Tangband-$Version-jp -package_unique_files .\readme.md, .\autopick.txt -build_conf Release
-# 英語版
-BuildPackage -package_name Tangband-$Version-en -package_unique_files .\readme-eng.md, .\autopick_eng.txt -build_conf English-Release
+# 実行
+BuildPackage -package_name "Tangband-$Version-jp" -package_unique_files @(".\readme.md", ".\autopick.txt") -build_conf "Release"
+BuildPackage -package_name "Tangband-$Version-en" -package_unique_files @(".\readme-eng.md", ".\autopick_eng.txt") -build_conf "English-Release"
