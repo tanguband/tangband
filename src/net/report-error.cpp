@@ -16,7 +16,7 @@ namespace {
 std::string fetch_webhook_url_for_sending_error_report()
 {
     http::Client client;
-    constexpr auto url = "https://hengband.github.io/api/report-error";
+    constexpr auto url = "";
     const auto response = client.get(url);
     if (!response || (response->status != 200)) {
         return "";
