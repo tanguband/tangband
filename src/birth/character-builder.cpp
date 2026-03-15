@@ -19,6 +19,7 @@
 #include "core/window-redrawer.h"
 #include "game-option/option-flags.h"
 #include "io/write-diary.h"
+#include "io/read-pref-file.h"
 #include "main/music-definitions-table.h"
 #include "main/sound-of-music.h"
 #include "mind/mind-elementalist.h"
@@ -113,6 +114,8 @@ void player_birth(PlayerType *player_ptr)
     }
 
     write_birth_diary(player_ptr);
+    process_pref_file(player_ptr, "pref.prf");
+    process_pref_file(player_ptr, "pref-key.prf");
     for (size_t i = 1; i < towns_info.size(); i++) {
         for (auto sst : STORE_SALE_TYPE_LIST) {
             store_init(i, sst);
