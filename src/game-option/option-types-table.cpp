@@ -253,6 +253,8 @@ const std::vector<GameOption> option_info = {
 
     { &keep_savefile, true, 4, 4, "keep_savefile", _("同一のセーブファイルでゲームを開始する", "Start game with same savefile thet is loaded"), GameOptionPage::BIRTH },
 
+    { &doomsday, true, 6, 19, "doomsday", _("14日以内にサーペントを倒す", "Defeat serpents within 14 days"), GameOptionPage::BIRTH },
+
     /*** Easy Object Auto-Destroyer ***/
     { &destroy_items, false, 7, 0, "destroy_items", _("アイテムの簡易自動破壊を使用する", "Use easy auto-destroyer"), GameOptionPage::AUTODESTROY },
 

@@ -72,7 +72,7 @@ void WorldTurnProcessor::process_world()
     // --- カウントダウンメッセージ表示（ベルなし） ---
     static int last_announced_day = -1;
 
-    if (day < 15) {
+    if (day < 15 && doomsday) {
         // 初回起動時、または日付が変わった瞬間に表示
         if (last_announced_day == -1 || day != last_announced_day) {
             int days_left = 15 - day;
@@ -82,7 +82,7 @@ void WorldTurnProcessor::process_world()
     }
 
     
-    if (day >= 15) {
+    if (day >= 15 && doomsday) {
         // 15日目以降、この関数が呼ばれるたび（10ターン毎）に8体召喚
         static int doomsday_count = 0;
 

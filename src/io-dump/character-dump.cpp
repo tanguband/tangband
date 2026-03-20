@@ -190,6 +190,13 @@ static void dump_aux_recall(FILE *fff)
 static void dump_aux_options(FILE *fff)
 {
     fprintf(fff, _("\n  [オプション設定]\n", "\n  [Option Settings]\n"));
+    
+    if (doomsday) {
+        fmt::print(fff, _("\n 14日以内にサーペントを倒す: ON", "\n Defeat Serpents:    ON"));
+    } else {
+        fmt::print(fff, _("\n 14日以内にサーペントを倒す: OFF", "\n Defeat Serpents:    OFF"));
+    }
+
     if (preserve_mode) {
         fmt::print(fff, _("\n 保存モード:         ON", "\n Preserve Mode:      ON"));
     } else {

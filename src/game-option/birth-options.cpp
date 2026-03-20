@@ -15,4 +15,5 @@ bool preserve_mode; /* Preserve artifacts (*) */
 bool autoroller; /* Allow use of autoroller for stats (*) */
 bool autochara; /* Autoroll for weight, height and social status */
 bool powerup_home; /* Increase capacity of your home (*) */
+bool doomsday; /* Enable Doomsday Serpents event (*) */
 bool keep_savefile; //!< 同一のセーブファイルでゲームを開始する / Start game with same savefile thet is loaded
