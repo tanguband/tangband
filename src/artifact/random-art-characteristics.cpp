@@ -136,28 +136,9 @@ static std::string get_random_art_filename(const bool armour, const int power)
  */
 std::string get_random_name(const ItemEntity &item, bool armour, int power)
 {
-    const auto prob = randint1(100);
-    constexpr auto chance_sindarin = 10;
-    if (prob <= chance_sindarin) {
-        return get_table_sindarin();
-    }
-
-    constexpr auto chance_table = 20;
-    if (prob <= chance_table) {
-        return get_table_name();
-    }
-
-    const auto filename = get_random_art_filename(armour, power);
-    const auto random_artifact_name = get_random_line(filename.data(), enum2i(item.artifact_bias));
-#ifdef JP
-    if (random_artifact_name) {
-        return *random_artifact_name;
-    }
-
-    return get_table_name();
-#else
-    return *random_artifact_name;
-#endif
+    auto sindarin_name = get_table_sindarin_aux();
+    sindarin_name += "タン";
+    return std::string(_("『", "'")).append(sindarin_name).append(_("』", "'"));
 }
 
 /*対邪平均ダメージの計算処理*/

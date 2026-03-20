@@ -404,11 +404,9 @@ static std::string name_unnatural_random_artifact(PlayerType *player_ptr, ItemEn
         return wrap_name(*new_name);
     }
 
-    if (one_in_(2)) {
-        return wrap_name(get_table_sindarin_aux());
-    }
-
-    return wrap_name(get_table_name_aux());
+    auto sindarin_name = get_table_sindarin_aux();
+    sindarin_name += "タン";
+    return wrap_name(sindarin_name);
 }
 
 static void generate_unnatural_random_artifact(
