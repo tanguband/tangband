@@ -13417,8 +13417,8 @@
     {
       "id": 372,
       "name": {
-        "ja": "鑑定",
-        "en": "Perception",
+        "ja": "*鑑定*",
+        "en": "*Identify*",
       },
       "flavor_name": {
         "ja": "ミスリルの",
@@ -13452,8 +13452,8 @@
         },
       ],
       "flavor": {
-        "ja": "それは振ると1個のアイテムを鑑定する。",
-        "en": "It identifies an item when you zap it.",
+        "ja": "それは振ると1個のアイテムを*鑑定*する。",
+        "en": "It *identifies* an item when you zap it.",
       },
     },
     {
